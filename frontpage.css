@@ -1,0 +1,61 @@
+/*for body, h1, p see questionpages.css*/
+body
+{
+    background-image: url("background.png");
+    animation: scroll-x 40s linear infinite; /*'plays' the scroll-x animation linearly over 20s infinitely*/
+    cursor: url('cursor.png'), auto;
+}
+@keyframes scroll-x {
+    /*animates moving completely across the screen*/
+  0% {
+    background-position-x: 0; /* Start position */
+  }
+  100% {
+    background-position-x: -1920px; /* End position, moves the full width of the container */
+  }
+}
+h1{
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 5vw;
+    margin: 0px;
+}
+p{
+    font-family: "Over the Rainbow", cursive;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 25px;
+    font-size: 1vw;
+}
+/*fixing the location of the img and making its size dependent on view size*/
+img
+{
+    height: 60%;
+    position: fixed;
+    bottom: 0%;
+    cursor: url('cursor.png'), auto;
+}
+/*aesthetics for button, essetially. Makes button size dependent on view size*/
+button 
+{
+    background-color: #4eb2ed;
+    border-color: white;
+    color: white;
+    font-family: "Over the Rainbow", cursive;
+    font-weight: 1000;
+    font-size: 2.5vw;
+    width: 50vw;
+    height: 10vh;
+    display: block;
+    margin: 0 auto;
+    cursor: url('cursor.png'), auto;
+}
+a
+{
+    /*see questionpages.css*/
+    text-decoration: none;
+}

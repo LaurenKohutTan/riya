@@ -1,0 +1,70 @@
+/*Used to format all of the question pages (also why doesnt // work in this)*/
+body
+{
+    background-image: url("background.png");
+    animation: scroll-x 40s linear infinite; /*'plays' the scroll-x animation linearly over 20s infinitely*/
+    cursor: url('cursor.png'), auto;
+}
+@keyframes scroll-x {
+    /*animates moving completely across the screen*/
+  0% {
+    background-position-x: 0; /* Start position */
+  }
+  100% {
+    background-position-x: -1920px; /* End position, moves the full width of the container */
+  }
+}
+h1
+{
+    /*Google fonts generated text formatting*/
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    /*So font adjusts by view size*/
+    font-size: 3vw;
+    margin: 0px;
+}
+p
+{
+    /*same stuff*/
+    font-family: "Over the Rainbow", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    margin-top: 0px;
+    text-align: center;
+}
+.answerchoices
+{
+    /*Used to format the answer choice containers*/
+    display: flex;
+    /*Makes them slightly apart*/
+    gap: 5vw;
+    /*distances them from the edge of the screen (or view or idk)*/
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.answerchoice
+{
+    /*just aesthetic formatting of the boxes*/
+    background-color: white;
+    border-radius: 10px;
+    /*making them format by view size*/
+    width: 20vw;
+    height: 65vh;
+    border: 4px solid #32a8ed;
+    text-align: center;
+    box-shadow: 5px 5px #5ab7ed;
+}
+img
+{
+    /*making them format by container size, which is dependent on view size*/
+    width: 50%;
+}
+a
+{
+    /*getting rid of odd auto happening text decoration*/
+    text-decoration: none;
+    color: black;
+}
